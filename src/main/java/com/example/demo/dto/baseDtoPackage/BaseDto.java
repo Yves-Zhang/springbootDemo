@@ -2,7 +2,6 @@ package com.example.demo.dto.baseDtoPackage;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class BaseDto<T> {
     public String resultCode = "0000";
     public String resultMessage = "请求成功！";

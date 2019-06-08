@@ -19,10 +19,10 @@ public class LoginController {
     private LoginService loginService;
 
     @RequestMapping(value = "/apitest", method = RequestMethod.GET)
-    public String apitest() {
+    public BaseDto apitest() {
         BaseDto result = loginService.SUCCESS();
 //        System.out.println(result);
-        return "hello";
+        return result;
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)

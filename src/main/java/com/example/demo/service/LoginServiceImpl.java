@@ -10,20 +10,21 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
 
-@Service("LoginService")
+@Service
 public class LoginServiceImpl implements LoginService {
 
-    public BaseDto<Map> logindto;
+    @Autowired
+    public LoginDto<Map> loginDto;
 
     public BaseDto SUCCESS() {
-        Map dataSource = new HashMap<String, String>();
+        Map<String, String> dataSource = new HashMap();
         dataSource.put("userName", "zhangsan");
         dataSource.put("passworld", "");
-        logindto.setData(dataSource);
-        return logindto;
+        loginDto.setData(dataSource);
+        return loginDto;
     }
 
     public BaseDto FAILED() {
-        return logindto;
+        return loginDto;
     }
 }
