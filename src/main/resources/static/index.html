@@ -8,9 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-<form action="/fileUpLoader_api/save" method="post" enctype="multipart/form-data">
+<form action="/fileUpLoader_api/save" method="post" enctype="multipart/form-data" target="upLoadIframe">
     <input type="file" name="fileUpLoad">
     <button type="submit">文件上传</button>
 </form>
+
+<!--这里的iframe是为了处理表单提交页面跳转-->
+<iframe name="upLoadIframe" frameborder="0" height="40"></iframe>
 </body>
 </html>

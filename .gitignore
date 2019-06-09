@@ -28,3 +28,6 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+
+### 静态资源文件 ###
+/src/main/resources/fileResources/*
