@@ -19,7 +19,7 @@ public class LoginServiceImpl implements LoginService {
     public BaseDto SUCCESS() {
         Map<String, String> dataSource = new HashMap();
         dataSource.put("userName", "zhangsan");
-        dataSource.put("passworld", "");
+        dataSource.put("password", "");
         loginDto.setData(dataSource);
         return loginDto;
     }
