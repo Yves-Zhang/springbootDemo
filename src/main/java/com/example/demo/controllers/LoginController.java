@@ -21,13 +21,12 @@ public class LoginController {
     @RequestMapping(value = "/apitest", method = RequestMethod.GET)
     public BaseDto apitest() {
         BaseDto result = loginService.SUCCESS();
-//        System.out.println(result);
+        System.out.println("热加载--");
         return result;
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login() {
-
         return "hello world!";
     }
 }
