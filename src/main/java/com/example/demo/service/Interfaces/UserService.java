@@ -5,4 +5,6 @@ import com.example.demo.entity.UserEntity;
 
 public interface UserService {
     public BaseDto addUser(UserEntity user);
+    public BaseDto searchUser();
+    public BaseDto checkoutUser(UserEntity user);
 }
